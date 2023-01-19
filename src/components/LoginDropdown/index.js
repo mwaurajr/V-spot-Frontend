@@ -38,9 +38,8 @@ function LoginDropDown({setShowLoginModal,showLoginModal,setLoginMessage}) {
               <li onClick={()=> setShowLoginModal(true)}>Log in</li>
               <li onClick={()=> setShowSignupModal(true)}>Sign up</li>
               <li className='dropdown-divider'></li>
-              <li onClick={()=> setShowLoginModal(true)}>Host your home</li>
+              <li onClick={()=> setShowLoginModal(true)}>Host your venue</li>
               <li onClick={()=> setShowLoginModal(true)}>Account</li>
-              <a  href="https://github.com/hannnmc/Cozybnb" target="_blank" rel="noopener noreferrer"><li id='github-help'>Help</li></a> 
           </ul>
       )}
 
