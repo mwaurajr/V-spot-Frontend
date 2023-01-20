@@ -1,0 +1,153 @@
+
+.filter-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.filter-modal-header {
+  padding: 20px 0 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16.5px;
+}
+
+.input input {
+  text-indent: 12px;
+  padding-top: 3px;
+}
+
+.price-input{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.price-input div:first-child {
+  padding-right: 16px;
+}
+
+.price-input .field{
+  width: 100px;
+  display: fixed;
+  height: 40px;
+  margin-right: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+.field input{
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  margin-left: 17px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+}
+
+.price-divider {
+  padding: 10px 0 0 18px;
+}
+
+.slider{
+  margin-top: 10px;
+  width: 100%;
+}
+.slider .progress{
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.range-input{
+  position: relative;
+  width: 100%;
+  margin-top: 12px;
+  margin-left: 7px;
+}
+
+
+.range-max {
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+
+.range-input input{
+  height: 5px;
+  top: -5px;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #DDDDDD;
+  border-radius: 5px;
+  z-index: -5;
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #13b1c9;
+  cursor: pointer;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  background-color: #13b1c9;
+  position: relative;
+  z-index: 5;
+}
+input[type="range"]::-moz-range-thumb{
+  height: 12px;
+  width: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #13b1c9;
+  pointer-events: auto;
+  -moz-appearance: none;
+  margin-top: 2px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+body {
+  scrollbar-gutter: stable;
+
+}
+
+.filter-button {
+  height: 40px;
+  width: 94.3px;
+  min-width: 94.3px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 20px 30px;
+}
+
+.filter-button button{
+  padding: 7px 0;
+  border: 1px solid #DDDDDD;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #222222;
+  cursor: pointer;
+}
+
+.filter-button span {
+  width: 100%;
+  font-weight: 550;
+  margin-left: -8px;
+}
+
+.filter-bot {
+  margin-bottom: 10px;
+}

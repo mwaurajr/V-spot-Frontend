@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Redirect, Route, Switch } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import ProfilePage from "./components/ProfilePage";
+import ListingIndexPage from './components/ListingIndexPage';
+import ListingShowPage from './components/ListingShowPage';
+import { useSelector } from 'react-redux';
+
+
 
 function App() {
+
+  const user = useSelector(({session}) => session.user);
+
+  const loggedIn = !!user;
+
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showListingEdit, setShowListingEdit] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation showLoginModal={showLoginModal} setShowLoginModal={setShowLoginModal}/>
+        <Switch>
+          <Route exact path="/listings/:listingId">
+            <ListingShowPage 
+            showLoginModal={showLoginModal} 
+            setShowLoginModal={setShowLoginModal} 
+            showListingEdit={showListingEdit} 
+            setShowListingEdit={setShowListingEdit}/>
+          </Route>
+          <Route exact path="/profile">
+            {loggedIn ? <ProfilePage
+              showListingEdit={showListingEdit} 
+              setShowListingEdit={setShowListingEdit}
+            /> : <Redirect to="/" />}
+          </Route>
+          <Route path="/">
+            <ListingIndexPage />
+          </Route>
+        </Switch>
+    </>
   );
 }
 

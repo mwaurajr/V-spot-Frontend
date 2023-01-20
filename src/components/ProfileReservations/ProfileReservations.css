@@ -1,0 +1,104 @@
+.profile-reservations {
+    margin-top: 36px;
+}
+
+.profile-reservations>h1 {
+    font-size: 22.5px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.res-item {
+    height: 102px;
+    margin-bottom: 36px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+.delete-reservation {
+    width: 20%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.res-item:hover .delete-reservation {
+    position: absolute;
+    background: linear-gradient(to right, transparent 0%, rgba(135, 135, 135, .3) 100%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 11;
+}
+
+.update-listing {
+    width: 20%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.profile-listing-info:hover .update-listing {
+    position: absolute;
+    background: linear-gradient(to right, transparent 0%, rgba(135, 135, 135, .3) 100%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 11;
+}
+
+.res-image {
+    object-fit: cover;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+}
+
+.res-info {
+    margin-left: 20px;
+    line-height: 24px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.res-title {
+    font-weight: 500;
+}
+
+.res-details {
+    color: #717171;
+}
+
+.res-dates {
+    display: flex;
+    color: #717171;
+}
+
+.res-dates h3{
+    margin-right: 10px;
+}
+
+.res-dates h3:first-child{
+    font-size: 15px;
+    /* color: #717171; */
+}
+
+.no-trips-yet {
+    margin-bottom: 36px;
+}

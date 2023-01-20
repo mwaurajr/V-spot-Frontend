@@ -1,0 +1,39 @@
+.profile-listing-info {
+    display: flex;
+    margin-top: 36px;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-listing-image {
+    height: 100px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.profile-listing-infobox {
+    margin-left: 20px;
+    line-height: 24px;
+    overflow-y: scroll;
+    height: 102px;
+}
+
+.profile-mylistings {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 36px;
+}
+
+#profile-box-divider {
+    margin-top: 36px;
+}
+.profile-item-title{
+    font-weight: 500;
+}
+
+.profile-listing-info-top {
+    color: #717171;
+    display: flex;
+    flex-direction: column;
+}
