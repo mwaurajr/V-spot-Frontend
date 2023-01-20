@@ -69,7 +69,7 @@ function ListingMap({
           map, 
           position: new window.google.maps.LatLng(listing.lat, listing.lng), 
           label: { 
-            text: `$${listing.price.toString()}`, 
+            text: `Ksh ${listing.price.toString()}`, 
             fontWeight: 'bold',
             color: 'black'
           }, 

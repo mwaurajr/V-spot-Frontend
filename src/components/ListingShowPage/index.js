@@ -62,11 +62,11 @@ function ListingShowPage({showLoginModal,setShowLoginModal, showListingEdit, set
     const [endDate, setEndDate] = useState(new Date(startDate.getFullYear(), endMonth, endDay));
     const [value, onChange] = useState([startDate,endDate]);
     const { listingId } = useParams();
-    const listing = useSelector(state => state.listings[listingId]);
-    const users = useSelector(state => state.users);
-    const currentUser = useSelector(state => state.session.user)
-    const reviews = useSelector(state => Object.values(state.reviews));
-    const reservations = useSelector(state => Object.values(state.reservations));
+    const listing = useSelector(town => town.listings[listingId]);
+    const users = useSelector(town => town.users);
+    const currentUser = useSelector(town => town.session.user)
+    const reviews = useSelector(town => Object.values(town.reviews));
+    const reservations = useSelector(town => Object.values(town.reservations));
     const listingReview = reviews.filter(review =>
         review.listingId === parseInt(listingId));
     const listingReservation = reservations.filter(reservation =>
@@ -243,7 +243,7 @@ function ListingShowPage({showLoginModal,setShowLoginModal, showListingEdit, set
             </svg>
                 <span className='show-info-reviews'>{reviewHeader}</span>
                 <span className='divider-dot'>·</span>
-            <span>{`${listing.city}, ${listing.state}, ${listing.country}`}</span>
+            <span>{`${listing.city}, ${listing.town}, ${listing.country}`}</span>
         </div>
       </div>
       <div className="listing-show-visuals">
@@ -445,7 +445,7 @@ function ListingShowPage({showLoginModal,setShowLoginModal, showListingEdit, set
             <div className='mobile-res-content'>
                 <div className='mobile-res-text'>
                     <span>
-                        <span className='semi-bold'>${`${listing.price}`}</span> night
+                        <span className='semi-bold'>Ksh {`${listing.price}`}</span> night
                     </span>
                     <span>
                         {`${monthNames[startDate.getMonth()]} ${startDate.getDate()} - ${monthNames[endDate.getMonth()]} ${endDate.getDate()}`}

@@ -53,7 +53,7 @@ function ListItem({ listing, isHighlighted, setSelectedListing }) {
             </span>
           </div>
           <div className="bot-info-field">
-            <span className="list-item-copy">${price}</span>
+            <span className="list-item-copy">Ksh {price}</span>
             <span className="list-item-category"> night</span>
           </div>
         </div>
