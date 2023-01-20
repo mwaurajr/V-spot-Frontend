@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import LoginDropDown from '../LoginDropdown';
 import './Navigation.css';
-import logoImg from '../../assets/images/cozybnb_logo.png';
 import { useEffect } from 'react';
 
 function Navigation({showLoginModal,setShowLoginModal}) {
@@ -49,7 +48,6 @@ function Navigation({showLoginModal,setShowLoginModal}) {
       <div className='nav-bar' style={regex.test(window.location.pathname) ? {width:'87vw', maxWidth:'1120px'} : {} }>
         <NavLink exact to="/">
           <div className='home-box'>
-            <img className='logo-img' src={logoImg} alt="logo" />
             <div className='logo-text'>VENUSPOT</div> 
           </div>
         </NavLink>

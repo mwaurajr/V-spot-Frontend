@@ -73,7 +73,7 @@ function LoginForm(props) {
         <div></div>
       </header>
       <div>
-        <h3>Welcome to Cozybnb</h3>
+        <h3>Welcome to VenuSpot</h3>
       </div>
         <form onSubmit={handleSubmit}>
           <div className="email-input-div">

@@ -110,7 +110,7 @@ const FloatingBox = ({listing, startDate, setStartDate, endDate, setEndDate, num
             <div className='floating-box-top'>
                 <div className='floating-box-price-review'>
                     <div className='floating-box-price'>
-                        ${listing.price} <span id='floating-price-night'> night</span>
+                        KSH{listing.price} <span id='floating-price-night'> night</span>
                     </div>
                     <div className='floating-box-review'><a 
                     className='float-box-tag'   href="#reviews-header">
@@ -223,21 +223,21 @@ const FloatingBox = ({listing, startDate, setStartDate, endDate, setEndDate, num
             <div className='floating-box-bot'>
                 <div className='floating-box-nights'>
                     <div>{listing.price} x {numDays} nights</div> 
-                    <div>${listing.price * numDays} </div> 
+                    <div>KSH{listing.price * numDays} </div> 
                 </div>
                 <div className='floating-box-cleaning'>
                     <div>Cleaning fee</div> 
-                    <div>${parseInt(listing.price * numDays * 0.08)} </div> 
+                    <div>KSH{parseInt(listing.price * numDays * 0.08)} </div> 
                 </div>
                 <div className='floating-box-service'>
                     <div>Service fee</div> 
-                    <div>${parseInt(listing.price * numDays * 0.12)}</div> 
+                    <div>KSH{parseInt(listing.price * numDays * 0.12)}</div> 
                 </div>
             </div>
             <div id='float-divider'></div>
             <div className='float-total'>
                 <div>Total before taxes</div>
-                <div>$ {listing.price * numDays + parseInt(listing.price * numDays * 0.12) + parseInt(listing.price * numDays * 0.08)}</div>
+                <div>KSH {listing.price * numDays + parseInt(listing.price * numDays * 0.12) + parseInt(listing.price * numDays * 0.08)}</div>
             </div>
         </div>
         {resSuccess1 && (

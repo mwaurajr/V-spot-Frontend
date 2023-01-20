@@ -25,8 +25,8 @@ function ListingMap({
     if (!map) {
       setMap(new window.google.maps.Map(mapRef.current, {
         center: {
-          lat: 40.74363402543966, 
-          lng: -73.98377122848856
+          lat: -1.2920659,
+          lng: 36.8219462
         }, 
         zoom: 13,
         mapId: "49aa6f67e21bd8eb",

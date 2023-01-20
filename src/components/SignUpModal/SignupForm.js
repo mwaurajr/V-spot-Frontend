@@ -90,7 +90,7 @@ function SignUpForm(props) {
             />
             <span className="bd-floating-label">Birthdate</span>
           </div>
-          <div className="birthdate-message">To sign up, you need to be at least 18. Your birthday won't be shared with other people who use Cozybnb. </div>
+          <div className="birthdate-message">To sign up, you need to be at least 18. Your birthday won't be shared with other people who use VenuSpot. </div>
           <div className="input-div">
             <input
             className="birthdate-input"
@@ -114,8 +114,8 @@ function SignUpForm(props) {
             <span className="su-password-floating-label">Password</span>
           </div>
           <div className="agree-message">By selecting 
-          <span className="bold">  Agree and continue</span>, I agree to Cozybnb's 
-          <span className="bold"><a href="https://github.com/hannnmc/Cozybnb" target="_blank" rel="noopener noreferrer">Term of Service</a>.
+          <span className="bold">  Agree and continue</span>, I agree to VenuSpot 
+          <span className="bold"><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Term of Service</a>.
           </span>
            </div>
           {/* <a href="https://www.linkedin.com/in/hanchen28/" target="_blank" rel="noopener noreferrer">LinkedIn</a> */}

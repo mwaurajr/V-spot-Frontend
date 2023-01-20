@@ -115,7 +115,7 @@ const ProfilePage = ({ showListingEdit, setShowListingEdit }) => {
                     <div>Email address</div>
                 </div>
                 {/* <div className='profile-box-divider'></div> */}
-                <div className='profile-box-subscript'><a href="https://github.com/hannnmc/Cozybnb" target="_blank" rel="noopener noreferrer">Learn more</a> about how confirming account info helps keep the VenuSpot community secure.</div>
+                <div className='profile-box-subscript'><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Learn more</a> about how confirming account info helps keep the VenuSpot community secure.</div>
             
                 </div>
                 </div>
@@ -133,7 +133,7 @@ const ProfilePage = ({ showListingEdit, setShowListingEdit }) => {
                 <div className='profile-about'>About</div>
                 <div className='profile-user-location'>
                     <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" height= "16px" width= "16px"><path d="M8.602 1.147l.093.08 7.153 6.914-.696.718L14 7.745V14.5a.5.5 0 0 1-.41.492L13.5 15H10V9.5a.5.5 0 0 0-.41-.492L9.5 9h-3a.5.5 0 0 0-.492.41L6 9.5V15H2.5a.5.5 0 0 1-.492-.41L2 14.5V7.745L.847 8.86l-.696-.718 7.153-6.915a1 1 0 0 1 1.297-.08z"></path></svg>
-                    <div className='profile-location'>Lives in New York, NY</div>
+                    <div className='profile-location'>Lives in Nairobi, KE</div>
                 </div>
                 <div className='profile-box-divider'></div>
 
