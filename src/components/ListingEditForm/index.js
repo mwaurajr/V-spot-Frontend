@@ -217,15 +217,8 @@ function ListingEditForm({listing, setShowListingEdit}) {
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
                 required>
-                  <option disabled value="">Town</option>
-                  <option value="Kiambu">Ruiru</option>
-                  <option value="Eldoret">Eldoret</option>
-                  <option value="Kakamega">Kakamega</option>
-                  <option value="Kisumu">Kisumu</option>
-                  <option value="Mombasa">Mombasa</option>
-                  <option value="Machakos">Kagundo</option>
-                  <option value="Nairobi">NRB CBD</option>
-                  <option value="Nakuru">Nakuru</option>
+                  <option disabled value="">City</option>
+                  <option value="Nairobi">Nairobi</option>
                 </select>
               </div>
               <div className='state-input'>
@@ -233,15 +226,15 @@ function ListingEditForm({listing, setShowListingEdit}) {
                 value={state}
                 onChange={(e) => setState(e.target.value)}
                 required>
-                  <option disabled value="">County</option>
-                  <option value="Kakamega">Kakamega</option>
-                  <option value="Kiambu">Kiambu</option>
-                  <option value="Nairobi">Nairobi</option>
-                  <option value="Nakuru">Nakuru</option>
-                  <option value="Mombasa">Mombasa</option>
-                  <option value="Uasin Gishu">Uasin Gishu</option>
-                  <option value="Machakos">Machakos</option>
-                  <option value="Kisumu">Kisumu</option>
+                  <option disabled value="">Town</option>
+                  <option value="Lavington">Lavington</option>
+                  <option value="Kilimani">Kilimani</option>
+                  <option value="Embakasi">Embakasi</option>
+                  <option value="Upper Hill">Upper Hill</option>
+                  <option value="South C">South C</option>
+                  <option value="Westlands">Westlands</option>
+                  <option value="CBD">CBD</option>
+                  <option value="Muthaiga">Muthaiga</option>
                   
                 </select>
               </div>
